@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    background: linear-gradient(to right, #cce7f0, #f0e6f6);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-button {
+    background-color: #4cafaf;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #45a5a5;
+    transform: scale(1.05);
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.task-input {
+    width: 60%;
+    padding: 15px;
+    font-size: 1.2em;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.enter-button {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    background-color: #4cafaf;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0 auto;
+}
+
+.enter-button:hover {
+    background-color: #45a5a5;
+    transform: scale(1.05);
+}
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <button class="menu-button">Add Task</button>
+        <button class="menu-button">View Task</button>
+    </div>
+
+    <div class="container">
+        <h1>To Do List</h1>
+        <input type="text" placeholder="Enter Task" class="task-input">
+        <button class="enter-button">Enter</button>
+    </div>
+</body>
+</html>
